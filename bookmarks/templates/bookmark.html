@@ -32,7 +32,7 @@
     
     
 <div id="tagbox">
-  <p style = "padding: 0px 5px 10px 5px; font-size: 20px;"><b>Tags</b> [<a href="/bookmarks/tags">edit</a>]</p>
+  <p style = "padding: 0px 5px 10px 5px; font-size: 20px;"><b>Tags</b> [<a href="/tags">edit</a>]</p>
     {% for i in all_tags %}
         <span>{{ i }}</span>   
     {% endfor %}
@@ -46,9 +46,9 @@
     {% for x in list %}
         <tr>
             <td><a href="{{ x.1 }}">{{ x.1 }}</a></td>
-            <td><a href="/bookmarks/{{ x.0 }}">Show</a></td>
-            <td><a href="/bookmarks/{{ x.0 }}/edit">Edit</a></td>
-            <td><a href="/bookmarks/{{ x.0 }}/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+            <td><a href="/{{ x.0 }}">Show</a></td>
+            <td><a href="/{{ x.0 }}/edit">Edit</a></td>
+            <td><a href="/{{ x.0 }}/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
         </tr>
     {% endfor %}
 
@@ -98,7 +98,7 @@
                 
                     for(var i=0;i<response.length;i++)
                     {
-                        var task='<tr><td><a href="'+response[i].fields.task+'">'+response[i].fields.task+'</a></td><td><a href="/bookmarks/'+response[i].pk+'">Show</a></td><td><a href="/bookmarks/'+response[i].pk+'/edit">Edit</a></td><td><a href="/bookmarks/'+response[i].pk+'/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td></tr>';
+                        var task='<tr><td><a href="'+response[i].fields.task+'">'+response[i].fields.task+'</a></td><td><a href="/'+response[i].pk+'">Show</a></td><td><a href="/'+response[i].pk+'/edit">Edit</a></td><td><a href="/'+response[i].pk+'/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td></tr>';
                         $("#bookmark-list").append(task);
                     }
                 
@@ -159,7 +159,7 @@
             $("#bookmark-list").empty();
                  for(var i=0;i<response.length;i++)
                     {
-                        var task='<tr><td><a href="'+response[i].fields.task+'">'+response[i].fields.task+'</a></td><td><a href="/bookmarks/'+response[i].pk+'">Show</a></td><td><a href="/bookmarks/'+response[i].pk+'/edit">Edit</a></td><td><a href="/bookmarks/'+response[i].pk+'/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td></tr>';
+                        var task='<tr><td><a href="'+response[i].fields.task+'">'+response[i].fields.task+'</a></td><td><a href="/'+response[i].pk+'">Show</a></td><td><a href="/'+response[i].pk+'/edit">Edit</a></td><td><a href="/'+response[i].pk+'/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td></tr>';
                         $("#bookmark-list").append(task);
                     }
              
