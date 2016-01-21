@@ -16,7 +16,7 @@
 
 <h1 style = "margin-top: 3%;">New Tag</h1>
 <div id="tagbox" style = "width: 40%;">
-<form accept-charset="UTF-8" action="/bookmarks/tags/" class="new_tag" id="new_tag" method="post">
+<form accept-charset="UTF-8" action="/tags/" class="new_tag" id="new_tag" method="post">
     {% csrf_token %}
 
   <div class = "text-center" class="field" style= "margin-top: 4%;">
@@ -30,7 +30,7 @@
 </form>
 
 <div class = "text-center" style = "margin-bottom: -4%;">
-    <b><a href="/bookmarks/tags">Back</a></b>
+    <b><a href="/tags">Back</a></b>
 </div>
 
 </div>
