@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^$', include('bookmarks.urls')),
-    url(r'^bookmarks', include('bookmarks.urls')),
+    url(r'^bookmarks/', include('bookmarks.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
