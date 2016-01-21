@@ -27,9 +27,9 @@
     {% for x in list %}
     <tr>
         <td> {{ x.1 }}</td>
-        <td><a href="/tags/{{ x.0 }}">Show</a></td>
-        <td><a href="/tags/{{ x.0 }}/edit">Edit</a></td>
-        <td><a href="/tags/{{ x.0 }}/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+        <td><a href="/bookmarks/tags/{{ x.0 }}">Show</a></td>
+        <td><a href="/bookmarks/tags/{{ x.0 }}/edit">Edit</a></td>
+        <td><a href="/bookmarks/tags/{{ x.0 }}/delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
     </tr>
     {% endfor %}
     
@@ -37,9 +37,9 @@
 
 <br />
 
-<b style = "margin-left: 46%; font-size: 18px;"><a href="/tags/new">New Tag</a>
+<b style = "margin-left: 46%; font-size: 18px;"><a href="/bookmarks/tags/new">New Tag</a>
 <br/><br/>
-<a style = "margin-left: 42%;" href="/">Back to Bookmarks</a></b>
+<a style = "margin-left: 42%;" href="/bookmarks/">Back to Bookmarks</a></b>
 
 <script>
   var rowCount=0;

@@ -20,7 +20,7 @@
     <p align = "center"><b>Are you Sure?</b> You want to delete "<b>{{ urls }}</b>"</p>
 
 
-<form accept-charset="UTF-8" action="/" class="delete_url" id="del_url" method="post">
+<form accept-charset="UTF-8" action="/bookmarks/" class="delete_url" id="del_url" method="post">
     {% csrf_token %}
   <div class = "text-center" class="field">
     <label for="bookmark_url"><b>Url : </b></label>
@@ -44,8 +44,8 @@
  
 <div class = "text-center" style = "margin-bottom: -2%;">
     <b>
-<a href="/{{ ids }}/edit">Edit</a> |
-<a href="/">Back</a>
+<a href="/bookmarks/{{ ids }}/edit">Edit</a> |
+<a href="/bookmarks/">Back</a>
     </b>
 </div>
 
