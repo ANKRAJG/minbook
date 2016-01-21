@@ -21,8 +21,7 @@ def bookmarks(request):
             o.execute("DELETE FROM bookmarks_bookmark WHERE task = ?", (urls,))
             conn.commit()
             o.close()
-            
-        
+              
     
     conn = sqlite3.connect('db.sqlite3')
     c = conn.cursor()
@@ -36,7 +35,6 @@ def bookmarks(request):
     j = ",".join(tags)                                  #Converting list into string i.e. from ['abc, xyz'] to 'abc, xyz'
     k = j.split(',')                                    # 'abc, xyz' to ['abc', 'xyz']   
     s_tags = unique(k)
-    
     
     s = conn.cursor()                                   #Filling Tag_list Table if for some additional tags
     s.execute("SELECT * FROM bookmarks_tag_list")
@@ -193,7 +191,7 @@ def edit_tags(request):
     b = conn.cursor()
     b.execute("SELECT * FROM bookmarks_tag_list")
     resultt = b.fetchall()
-
+    
     context = {'list': resultt}
 
     return render(request, 'edit_tags.html', context)

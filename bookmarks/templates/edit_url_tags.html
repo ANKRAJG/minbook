@@ -17,7 +17,7 @@
 <div id="editing-bookmark">
 <form accept-charset="UTF-8" action="/bookmarks/{{ ids }}/" class="edit_bookmark" id="edit_bookmark_{{ ids }}" method="post">
     {% csrf_token %}
-  <div class="field" style="margin:30px 0px 0px; padding:10px; border: 0px;background:#336e7b;">
+  <div class="field" style="margin:30px 0px 0px; padding:10px; border: 0px; background:#336e7b;">
       <label for="bookmark_url" style="color:#eee; padding-left: 12px; padding-right: 12px; font-size: 20px; font-family: 'sans-serif';"><b>Url :</b></label>
     <input id="bookmark_url" name="bookmark_url" size="30" type="text" value="{{ urls }}" style="background:#ccc;border-color:#ccc; width:70%; height:20px; font-size: 15px; padding-left: 5px; color: #1e824c;" />
   </div>
