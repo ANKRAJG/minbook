@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 https://tranquil-beach-58331.herokuapp.com/
-=======
-https://tranquil-beach-58331.herokuapp.com/
->>>>>>> origin/master
