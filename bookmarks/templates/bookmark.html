@@ -77,16 +77,17 @@
             var str=$("#search").val();
             var parsedInput=parseInput(str);
             var data={"data":parsedInput};
-            if($("#add-input").html()==='clear' || $("#add-input").html()==='save')
+            if($("#add-input").html()==='clear')
             {
                 setTimeout(function(){
                 window.location.reload();
-                return;},1000);
+                return;},100);
             }
             
             if(parsedInput.length>1)
                 {
                   save(data, function(response){
+                     window.location.reload();
                       $("#add-input").html('clear');
             })
             }
