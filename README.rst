@@ -5,7 +5,7 @@ Its a simple web apllication for adding tasks as tags(or bookmarks) called Minim
 
 Heroku Link
 -----------
-You can check this app by visiting: https://tranquil-beach-58331.herokuapp.com
+You can check this app by visiting: https://minbuk.herokuapp.com
 
 Quick start
 -----------
