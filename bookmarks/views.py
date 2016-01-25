@@ -21,7 +21,6 @@ def bookmarks(request):
             o.execute("DELETE FROM bookmarks_bookmark WHERE task = ?", (urls,))
             conn.commit()
             o.close()
-            return HttpResponse('<h1>Data Deleted!</h1>')
               
     
     conn = sqlite3.connect('db.sqlite3')
